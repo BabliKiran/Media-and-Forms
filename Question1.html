@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+
+      .gallery {
+        gap: 10px;
+        /* Gap between images */
+        padding: 20px;
+        border: solid;
+        border-color: gray;
+      }
+
+      .gallery-caption {
+        text-align: center;
+      }
+
+      .gallery img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .gallery img:hover {
+        transform: scale(1.1);
+        /* Scale up by 10% */
+        border: 1px solid gray;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Cars Gallery</h1>
+
+    <table class="gallery" border="1" align="center">
+      <tr>
+        <td class="gallery-item">
+          <img src="Images\ford.jpg" alt="Image 1" />
+          <p class="gallery-caption">Ford F-Series</p>
+        </td>
+        <td class="gallery-item">
+          <img src="Images\TeslaY.jpg" alt="Image 2" />
+          <p class="gallery-caption">Tesla Model Y</p>
+        </td>
+        <td class="gallery-item">
+          <img src="Images\Toyota.jpg" alt="Image 2" />
+          <p class="gallery-caption">Toyota RAV4</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="gallery-item">
+          <img src="Images\ToyotaCamry.jpg" alt="Image 7" />
+          <p class="gallery-caption" align="center">Toyota Camry</p>
+        </td>
+        <td class="gallery-item">
+          <img src="Images\lamborgini.jpg" alt="Image 7" />
+          <p class="gallery-caption">Lamborghini SVJ</p>
+        </td>
+        <td class="gallery-item">
+          <img src="Images\ferrari.jpg" alt="Image 7" />
+          <p class="gallery-caption">Ferrari 488 GT3</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="gallery-item">
+          <img src="Images\Honda.jpg" alt="Image 4" />
+          <p class="gallery-caption">Honda CR-V</p>
+        </td>
+        <td class="gallery-item">
+          <img src="Images\ChevroletSilverado.jpg" alt="Image 2" />
+          <p class="gallery-caption">Chevrolet Silverado</p>
+        </td>
+        <td class="gallery-item">
+          <img src="Images\RamPickup.jpg" alt="Image 6" />
+          <p class="gallery-caption">Ram Pickup</p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
